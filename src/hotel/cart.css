@@ -1,0 +1,77 @@
+:root {
+  --gold:linear-gradient(45deg,#d38a00,#d3a600,#3d3518);
+  --platinum:linear-gradient(45deg,#c1c1c1,#5e5e5e,#2e2e2e);
+  --black: #2b2d42;
+  --white: #fff;
+
+}
+.cart{
+  display:flex;
+  flex-direction: column;
+  max-width:100%;
+  align-items:flex-start;
+  justify-content:center;
+  padding:0.5rem;
+  
+}
+.price{
+  display:flex;
+  align-items:flex-start;
+  flex-direction:column;
+  font-size:1.5rem;
+  font-weight:bold;
+  padding:1rem;
+  background: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+}
+.cart .cart-card{
+  display: flex;
+  padding: 0.5rem;
+  background: var(--white);
+  max-width:100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  margin:0.5rem 0;
+}
+
+.cart-card .cart-content{
+  display:flex;
+  justify-content:flex-start;
+  align-items:space-between;
+  flex-direction:column;
+  padding:0.5rem;
+  font-size:0.5rem;
+  
+}
+.cart-card .cart-content .cart-rating{
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  color:var(--gold);
+  padding:0.5rem;
+  font-size:0.2rem;
+  
+}
+
+.cart-card.gold{
+  color: var(--white);
+  background: var(--gold);
+}
+.cart-card.platinum{
+  color: var(--white);
+  background: var(--platinum);
+}
+.cart-card .addtocart{
+  font-size: 1.5rem;
+  margin:0 1rem;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  white-space: nowrap;
+  color:#d39900;
+}
+.cart-card .addtocart .cartItem{
+  font-size: 1rem;
+  color:var(--white);
+  padding:0.5rem 0.5rem;
+}
